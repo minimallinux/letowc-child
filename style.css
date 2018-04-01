@@ -1,0 +1,205 @@
+/*
+Theme Name: LetoWC Child
+Theme URI: https://github.com/minimallinux/letowc-child.git
+Author: P A McGowan
+Author URI: https://webmobapps.com/
+Template: letowc
+Description: LetoWC is a clean and well-designed e-commerce WordPress/Woocommerce theme. It is very flexible and packed with several theme options that make website development a breeze. It has a fluid and fully responsive layout design to make sure that your visitors will have an awesome viewing experience each time they go to your website. It exists so that you can speedily and efficiently craft powerful e-commerce websites across all niches and markets in a matter of minutes, without having to write a line of code. It is packed with nice features that allow you to explore your creativity and build a unique website for your online store. It comes with smooth integration of WooCommerce plugin. Official Support Forum: https://themepalace.com/support-forum/ Full Demo: https://wenthemes.com/theme-demos/?demo=easy-commerce
+Version: 1.0.0
+License: GPLv3
+License URI: http://www.gnu.org/licenses/gpl-3.0.html
+Text Domain: letowc-child
+Tags: one-column, two-columns, three-columns, left-sidebar, right-sidebar, custom-background, custom-colors, custom-menu, featured-images, full-width-template, translation-ready, theme-options, threaded-comments, footer-widgets, custom-logo, blog, e-commerce
+*/
+.site-branding {
+    margin-left: 45px;
+    line-height: 1;
+}
+.nav-link-right {
+    list-style: none;
+    margin-left: 45px;
+}
+.nav-link-cart,
+.nav-link-account {
+    min-width: 100px;
+}
+/*Page bottom*/
+.bottom {
+padding: 20px;
+}
+/*Footer*/
+.footer {
+  padding: 25px;
+  background:#141E30;
+}
+.copyright {
+    color: #929292;
+}
+
+.copyright a {
+    color: #929292;
+}
+
+.menu-social {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: inline-flex;
+}
+
+.menu-social li {
+    margin-right: 5px;
+}
+.footer .divider {
+    background: #46484a!important;
+    width: 100%;
+    height: .1rem;
+    margin: 2rem 0 1.5rem 0;
+    border: none;
+}
+.hr {
+    display: block;
+    width: 16rem;
+    height: 0.2rem;
+    background-color: #dfe1e5;
+    margin: 3rem auto;
+}
+/*Desktop Nav*/
+
+.dgwt-wcas-search-wrapp {
+    
+}
+#primary-menu li a {
+font-size: 0.7em;
+text-transform: uppercase;
+}
+#primary-menu li {
+padding-left: 8px;
+padding-right: 8px;
+}
+
+/*Woocommerce*/
+.woocommerce {
+font-family: "Lato-Regular";
+}
+.select-wrapper {
+display: none;
+}
+/*Hide Result Count on Pages*/
+p.woocommerce-result-count {
+display: none!important;
+}
+/*Buttons*/
+a.button.wc-forward,
+.gallery a.button.wc-forward, 
+.woocommerce a.button,
+.woocommerce button.button, 
+.woocommerce input.button, 
+.woocommerce #respond input#submit, 
+.woocommerce #content input.button, 
+.woocommerce-page a.button, 
+.woocommerce-page button.button, 
+.woocommerce-page input.button, 
+.woocommerce-page #respond input#submit, 
+.woocommerce-page #content input.button {
+   position: relative;
+    display: inline-block;
+    padding: 15px 25px;
+    background-color: #141E30;
+    /*for compatibility with older browsers*/
+  background-image: -webkit-linear-gradient(#141E30,#243B55);
+    background-image: -moz-linear-gradient(#141E30,#243B55);
+    background-image: -o-linear-gradient(#141E30,#243B55);
+    background-image: linear-gradient(#141E30,#243B55);
+    border: 1px solid #222;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5), inset 0 0 1px rgba(255, 255, 255, 0.6);
+    text-shadow: 0 -1px 0 black, 0 1px 0 rgba(255, 255, 255, 0.2);
+    color: #fff;
+    text-transform: uppercase;
+     -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+   -khtml-border-radius: 5px;
+    /* Size */
+    min-height: 30px;
+    padding: 0 30px;
+    line-height: 30px;
+    font-size: 18px;
+}
+a.button.wc-forward:after,
+.gallery a.button.wc-forward:after, 
+.woocommerce a.button:after,
+.woocommerce button.button:after, 
+.woocommerce input.button:after, 
+.woocommerce #respond input#submit:after, 
+.woocommerce #content input.button:after, 
+.woocommerce-page a.button:after, 
+.woocommerce-page button.button:after, 
+.woocommerce-page input.button:after, 
+.woocommerce-page #respond input#submit:after, 
+.woocommerce-page #content input.button:after {
+content: '';
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: -webkit-calc(100% - 4px);
+    width: -moz-calc(100% - 4px);
+    width: calc(100% - 4px);
+    height: 50%;
+    background: -webkit-linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.2));
+    background: -moz-linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.2));
+    background: -o-linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.2));
+    background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.2));  
+
+}
+a.button.wc-forward:hover,
+a.button.wc-forward:focus,
+a.button.wc-forward:active,
+.gallery a.button.wc-forward:hover,
+.gallery a.button.wc-forward:focus,
+.gallery a.button.wc-forward:active,
+.woocommerce a.button:hover,
+.woocommerce a.button:focus,
+.woocommerce a.button:active,
+.woocommerce button.button:hover, 
+.woocommerce button.button:focus, 
+.woocommerce button.button:active, 
+.woocommerce input.button:hover, 
+.woocommerce input.button:focus, 
+.woocommerce input.button:active, 
+.woocommerce #respond input#submit:hover, 
+.woocommerce #respond input#submit:focus, 
+.woocommerce #respond input#submit:active, 
+.woocommerce #content input.button:hover, 
+.woocommerce #content input.button:focus, 
+.woocommerce #content input.button:active, 
+.woocommerce-page a.button:hover, 
+.woocommerce-page a.button:focus, 
+.woocommerce-page a.button:active, 
+.woocommerce-page button.button:hover, 
+.woocommerce-page button.button:focus, 
+.woocommerce-page button.button:active, 
+.woocommerce-page input.button:hover, 
+.woocommerce-page input.button:focus, 
+.woocommerce-page input.button:active, 
+.woocommerce-page #respond input#submit:hover, 
+.woocommerce-page #respond input#submit:focus, 
+.woocommerce-page #respond input#submit:active, 
+.woocommerce-page #content input.button:hover,
+.woocommerce-page #content input.button:focus, 
+.woocommerce-page #content input.button:active {
+  background-color:  #444;
+    /*for compatibility with older browsers*/
+    background-image: -webkit-linear-gradient(#000,#444);
+    background-image: -moz-linear-gradient(#000,#444);
+    background-image: -o-linear-gradient(#000,#444);
+    background-image: linear-gradient(#000,#444);
+    color: #fff;
+    -webkit-transition: background-color .15s ease-in-out;
+    -o-transition: background-color .15s ease-in-out;
+    -moz-transition: background-color .15s ease-in-out;
+    transition: background-color .15s ease-in-out;
+    color: #fff;
+}
+
+
