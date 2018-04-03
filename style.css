@@ -1,27 +1,38 @@
 /*
-Theme Name: LetoWC Child
+Theme Name: Leto Child
 Theme URI: https://github.com/minimallinux/letowc-child.git
 Author: P A McGowan
 Author URI: https://webmobapps.com/
 Template: letowc
-Description: LetoWC is a clean and well-designed e-commerce WordPress/Woocommerce theme. It is very flexible and packed with several theme options that make website development a breeze. It has a fluid and fully responsive layout design to make sure that your visitors will have an awesome viewing experience each time they go to your website. It exists so that you can speedily and efficiently craft powerful e-commerce websites across all niches and markets in a matter of minutes, without having to write a line of code. It is packed with nice features that allow you to explore your creativity and build a unique website for your online store. It comes with smooth integration of WooCommerce plugin. Official Support Forum: https://themepalace.com/support-forum/ Full Demo: https://wenthemes.com/theme-demos/?demo=easy-commerce
+Description: Leto is a clean and well-designed e-commerce WordPress theme. It is very flexible and packed with several theme options that make website development a breeze. It has a fluid and fully responsive layout design to make sure that your visitors will have an awesome viewing experience each time they go to your website. It exists so that you can speedily and efficiently craft powerful e-commerce websites across all niches and markets in a matter of minutes, without having to write a line of code. It is packed with nice features that allow you to explore your creativity and build a unique website for your online store. It comes with smooth integration of WooCommerce plugin. Official Support Forum: https://themepalace.com/support-forum/ Full Demo: https://wenthemes.com/theme-demos/?demo=easy-commerce
 Version: 1.0.0
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 Text Domain: letowc-child
 Tags: one-column, two-columns, three-columns, left-sidebar, right-sidebar, custom-background, custom-colors, custom-menu, featured-images, full-width-template, translation-ready, theme-options, threaded-comments, footer-widgets, custom-logo, blog, e-commerce
 */
+/*Header*/
+.top-bar {
+background:#141E30!important;	
+}
 .site-branding {
-    margin-left: 45px;
-    line-height: 1;
+height: 80px;
+margin-left: 45px;
+line-height: 1;
+padding-top: 0 !important;
+padding-bottom: 0 !important;
+margin-top: -8px !important;
+}
+.site-header {
+background: #f2f2f2!important;
 }
 .nav-link-right {
-    list-style: none;
-    margin-left: 45px;
+list-style: none;
+margin-left: 45px;
 }
 .nav-link-cart,
 .nav-link-account {
-    min-width: 100px;
+min-width: 100px;
 }
 /*Page bottom*/
 .bottom {
@@ -29,24 +40,21 @@ padding: 20px;
 }
 /*Footer*/
 .footer {
-  padding: 25px;
-  background:#141E30;
+ padding: 25px;
+background:#141E30;
 }
 .copyright {
-    color: #929292;
+color: #929292;
 }
-
 .copyright a {
     color: #929292;
 }
-
 .menu-social {
     list-style: none;
     padding: 0;
     margin: 0;
     display: inline-flex;
 }
-
 .menu-social li {
     margin-right: 5px;
 }
@@ -65,10 +73,6 @@ padding: 20px;
     margin: 3rem auto;
 }
 /*Desktop Nav*/
-
-.dgwt-wcas-search-wrapp {
-    
-}
 #primary-menu li a {
 font-size: 0.7em;
 text-transform: uppercase;
@@ -77,11 +81,19 @@ text-transform: uppercase;
 padding-left: 8px;
 padding-right: 8px;
 }
-
 /*Woocommerce*/
 .woocommerce {
 font-family: "Lato-Regular";
 }
+.woocommerce .woocommerce-message ,   
+.woocommerce-page .woocommerce-message ,   
+.woocommerce .woocommerce-error ,   
+.woocommerce-page .woocommerce-error ,   
+.woocommerce .woocommerce-info ,   
+.woocommerce-page .woocommerce-info  {  
+background:#dce0ed; 
+color: #000; 
+}  
 .select-wrapper {
 display: none;
 }
@@ -89,7 +101,8 @@ display: none;
 p.woocommerce-result-count {
 display: none!important;
 }
-/*Buttons*/
+/*Buttons
+p.add_enquiry_label,
 a.button.wc-forward,
 .gallery a.button.wc-forward, 
 .woocommerce a.button,
@@ -106,8 +119,7 @@ a.button.wc-forward,
     display: inline-block;
     padding: 15px 25px;
     background-color: #141E30;
-    /*for compatibility with older browsers*/
-  background-image: -webkit-linear-gradient(#141E30,#243B55);
+    background-image: -webkit-linear-gradient(#141E30,#243B55);
     background-image: -moz-linear-gradient(#141E30,#243B55);
     background-image: -o-linear-gradient(#141E30,#243B55);
     background-image: linear-gradient(#141E30,#243B55);
@@ -120,7 +132,6 @@ a.button.wc-forward,
     -moz-border-radius: 5px;
     border-radius: 5px;
    -khtml-border-radius: 5px;
-    /* Size */
     min-height: 30px;
     padding: 0 30px;
     line-height: 30px;
@@ -189,7 +200,6 @@ a.button.wc-forward:active,
 .woocommerce-page #content input.button:focus, 
 .woocommerce-page #content input.button:active {
   background-color:  #444;
-    /*for compatibility with older browsers*/
     background-image: -webkit-linear-gradient(#000,#444);
     background-image: -moz-linear-gradient(#000,#444);
     background-image: -o-linear-gradient(#000,#444);
@@ -200,6 +210,6 @@ a.button.wc-forward:active,
     -moz-transition: background-color .15s ease-in-out;
     transition: background-color .15s ease-in-out;
     color: #fff;
-}
+}*/
 
 
