@@ -11,12 +11,12 @@ License URI: http://www.gnu.org/licenses/gpl-3.0.html
 Text Domain: letowc-child
 Tags: one-column, two-columns, three-columns, left-sidebar, right-sidebar, custom-background, custom-colors, custom-menu, featured-images, full-width-template, translation-ready, theme-options, threaded-comments, footer-widgets, custom-logo, blog, e-commerce
 */
-/*Header*/
+/*Top Bar*/
 .top-bar {
 background:#141E30!important;	
 }
 .site-branding {
-height: 80px;
+height: 70px;
 margin-left: 45px;
 line-height: 1;
 padding-top: 0 !important;
@@ -24,15 +24,56 @@ padding-bottom: 0 !important;
 margin-top: -8px !important;
 }
 .site-header {
-background: #f2f2f2!important;
+/*background: #f2f2f2!important;*/
 }
 .nav-link-right {
+height: 40px;    
 list-style: none;
 margin-left: 45px;
 }
 .nav-link-cart,
 .nav-link-account {
 min-width: 100px;
+}
+.nav-link-right .nav-link-account a {
+color: lightgrey;
+font-size: 14px;
+}
+
+.nav-link-right .nav-link-cart .header-cart-link {
+color: lightgrey;
+font-size: 22px;
+}
+/*Desktop Nav*/
+#primary-menu li {
+padding-left: 8px;
+padding-right: 8px;
+}
+#primary-menu li a {
+font-size: 0.7em;
+text-transform: uppercase;
+}
+#primary-menu>li.menu-item,
+.sub-menu .menu-item {
+    cursor: pointer;
+}
+#primary-menu>li.menu-item:hover a,
+.sub-menu .menu-item:hover a {
+    color: #2196F3;
+}
+#primary-menu>li.menu-item {
+    border-bottom: 2px solid transparent;
+    padding: 10px 8px;
+}
+#primary-menu>li.menu-item:hover {
+    border-bottom: 2px solid #2196f3;
+}
+.sub-menu .menu-item {
+    font-weight: 500;
+    padding: 6px;
+}
+.sub-menu .menu-item:hover {
+    background: #eee;
 }
 /*Page bottom*/
 .bottom {
@@ -72,15 +113,7 @@ color: #929292;
     background-color: #dfe1e5;
     margin: 3rem auto;
 }
-/*Desktop Nav*/
-#primary-menu li a {
-font-size: 0.7em;
-text-transform: uppercase;
-}
-#primary-menu li {
-padding-left: 8px;
-padding-right: 8px;
-}
+
 /*Woocommerce*/
 .woocommerce {
 font-family: "Lato-Regular";
