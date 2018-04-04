@@ -8,10 +8,10 @@ function theme_enqueue_styles() {
         array('parent-style')
     );
 }
-add_action('woocommerce_after_shop_loop','show_text_under_shop',99);
+/*add_action('woocommerce_after_shop_loop','show_text_under_shop',99);
 function show_text_under_shop() {
 echo 'TEST';
-}
+}*/
 add_theme_support( 'post-thumbnails' );
 add_image_size( 'leto_child_blog_img_side', 600, 400, true );
 /*Hide Product Count showing in Category View*/
@@ -19,7 +19,7 @@ add_filter( 'woocommerce_subcategory_count_html', 'woo_remove_category_products_
 function woo_remove_category_products_count() {
     return;
 }
-add_filter( 'woocommerce_gateway_icon', 'leto_child_remove_what_is_paypal', 10, 2 );
+/*add_filter( 'woocommerce_gateway_icon', 'leto_child_remove_what_is_paypal', 10, 2 );
  
 function leto_child_remove_what_is_paypal( $icon_html, $gateway_id ) {
 // the apply_filters comes with 2 parameters: $icon_html, $this->id
@@ -43,6 +43,10 @@ return $icon_html;
 // if PayPal, the system will use our custom $icon_html
 // if not, the system will use the original $icon_html
  
+}*/
+add_filter('single_add_to_cart_text', 'woo_custom_cart)button_text');
+function woo_custom_cart_button_text() {
+       return__('My Button Text', 'woocommerce');
 }
 /*add_filter( 'wc_stripe_payment_icons', 'change_my_icons' );
 function change_my_icons( $icons ) {
